@@ -1,0 +1,7 @@
+C:\Users\Brennan\Documents\codes.txt
+C:\Users\Brennan\Documents\output.txt
+C:\Users\Brennan\Documents\TimeTracker.exe
+C:\Users\Brennan\Documents\TimeTracker.dll
+C:\Users\Brennan\Documents\TimeTracker.deps.json
+C:\Users\Brennan\Documents\TimeTracker.runtimeconfig.json
+C:\Users\Brennan\Documents\TimeTracker.pdb
