@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.IO;
 using System.Windows.Forms;
 
@@ -30,17 +30,12 @@ namespace TimeTracker
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.Insert(0, comboBox1.SelectedItem.ToString() + ", " + DateTime.Now);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,7 +62,12 @@ namespace TimeTracker
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            listBox1.Items.Insert(0, comboBox1.SelectedItem.ToString() + ", " + DateTime.Now);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             using (StreamWriter sw = File.CreateText("output.txt"))
@@ -77,7 +77,7 @@ namespace TimeTracker
                 }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             for (int i = listBox1.SelectedItems.Count - 1; i >= 0; i--)
             {
